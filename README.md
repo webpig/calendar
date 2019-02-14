@@ -16,3 +16,7 @@ React Native官网：https://reactnative.cn/
 ![image](./images/proj.png)
 
 详情见文档：https://reactnative.cn/docs/getting-started/
+
+### 真机调试
+
+具体见链接：https://segmentfault.com/a/1190000014416132
