@@ -7,9 +7,11 @@ React Native官网：https://reactnative.cn/
 
 1. git clone https://github.com/webpig/calendar.git
 
-2. npm install
+2. cd calendar
 
-3. 直接使用Xcode打开项目中ios文件夹下的calendar.xcodeproj
+3. npm install
+
+4. 直接使用Xcode打开项目中ios文件夹下的calendar.xcodeproj
 
 ![image](./images/proj.png)
 
