@@ -11,4 +11,6 @@ React Native官网：https://reactnative.cn/
 
 3. 直接使用Xcode打开项目中ios文件夹下的calendar.xcodeproj
 
+![image](./images/proj.png)
+
 详情见文档：https://reactnative.cn/docs/getting-started/
