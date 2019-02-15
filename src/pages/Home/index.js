@@ -98,9 +98,14 @@ export default class Home extends Component {
                                 {this.store.lastMonth}月
                             </Text>
                         </TouchableOpacity>
-                        <Text style={styles.yearText}>
-                            {this.store.currDisplayYear}年{this.store.currDisplayMonth}月
-                        </Text>
+                        <View style={styles.yearTextWrap}>
+                            <Text style={styles.yearText}>
+                                {this.store.currDisplayYear}年{this.store.currDisplayMonth}月
+                            </Text>
+                            <Text style={styles.lunarYearText}>
+                                {lunarYear}年{lunarMonth}月{lunarDay}
+                            </Text>
+                        </View>
                         {/* <Text style={styles.lunarYearText}>
                             {this.store.currLunarYear}年{this.store.currLunarMonth}月
                         </Text> */}
@@ -113,11 +118,11 @@ export default class Home extends Component {
                     </View>
                     <View style={styles.dayContainer}>{this.renderDayContainer()}</View>
                     <View style={styles.dateContainer} {...this._panResponder.panHandlers}>{this.renderDateContainer()}</View>
-                    <View style={styles.dateDetailContainer}>
+                    {/* <View style={styles.dateDetailContainer}>
                         <Text>{this.store.currDisplayYear}年{this.store.currDisplayMonth}月{this.store.currClickdDate}日</Text>
                         <Text>周{dayArr[this.store.getDayInADate()]}</Text>
                         <Text>{lunarYear}年{lunarMonth}月{lunarDay}</Text>
-                    </View>
+                    </View> */}
                 </ImageBackground>
             </View>
         );
@@ -215,10 +220,19 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between'
     },
+    yearTextWrap: {
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     yearText: {
         fontSize: 20,
         color: 'red',
         // fontWeight: 'bold'
+    },
+    lunarYearText: {
+        fontSize: 12,
+        color: '#666',
+        marginTop: 2
     },
     arrowBtn: {
         flexDirection: 'row',
