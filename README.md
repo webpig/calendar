@@ -17,6 +17,10 @@ React Native官网：https://reactnative.cn/
 
 详情见文档：https://reactnative.cn/docs/getting-started/
 
+### 运行效果：
+
+![image](./images/prod.png)
+
 ## 真机调试
 
 具体见链接：https://segmentfault.com/a/1190000014416132
